@@ -11,6 +11,8 @@ function cargarVideoXvelocidad() {
     const speed = navigator.connection.effectiveType
     const media = videos.find((v)=> v.speed === speed)
 
+    console.log(media.speed)
+
     videoName.textContent = media.tag
     video.src = media.video
     // video.play()
